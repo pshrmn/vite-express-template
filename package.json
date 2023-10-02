@@ -6,10 +6,11 @@
   "scripts": {
     "dev:client": "vite",
     "dev:server": "tsx ./src/server",
-    "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "prod-server": "cross-env NODE_ENV=production tsx ./src/server"
+    "prod:client": "tsc && vite build",
+    "prod:server": "cross-env NODE_ENV=production tsx ./src/server",
+    "ts:watch": "tsc --watch"
   },
   "dependencies": {
     "ejs": "^3.1.9",
