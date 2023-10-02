@@ -5,9 +5,8 @@
   "type": "module",
   "scripts": {
     "dev:client": "vite",
-    "dev:server": "tsx ./src/server",
+    "dev:server": "tsx watch ./src/server",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview",
     "prod:client": "tsc && vite build",
     "prod:server": "cross-env NODE_ENV=production tsx ./src/server",
     "ts:watch": "tsc --watch"
@@ -29,7 +28,6 @@
     "eslint": "^8.45.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
-    "nodemon": "^3.0.1",
     "tsx": "^3.13.0",
     "typescript": "^5.0.2",
     "vite": "^4.4.5"
